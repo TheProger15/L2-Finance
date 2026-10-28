@@ -32,12 +32,6 @@ h1 { font-size: 56px; line-height: 1.27; font-weight: 800; letter-spacing: -.5px
 .hero-picture:before { content: ""; position: absolute; width: 205px; height: 220px; left: -210px; top: -10px; background: #465978; border-radius: 60% 40% 55% 45%; transform: rotate(-35deg); }
 .hero-circle { position: absolute; width: 530px; height: 460px; top: 10px; left: -5px; background: #3285b4; border-radius: 50%; opacity: .95; }
 .phone { position: absolute; z-index: 2; top: 0; left: 120px; width: 245px; height: 520px; background: #090d17; border: 3px solid #ff4c43; border-radius: 36px; padding: 9px; transform: rotate(19deg); box-shadow: 0 8px 8px #0005; }
-.phone-screen { height: 100%; background: #fff; color: #252b42; border-radius: 27px; padding: 18px 12px; overflow: hidden; }
-.phone-top { display: flex; justify-content: space-between; font-size: 8px; margin-bottom: 30px; }
-.phone-small-lines { display: flex; flex-direction: column; gap: 8px; margin-bottom: 28px; }
-.phone-small-lines i { height: 3px; width: 30px; background: #e5eaf0; }
-.phone-small-lines i:nth-child(2) { width: 65px; }
-.phone-small-lines i:nth-child(3) { width: 45px; }
 .app-title { display: flex; flex-direction: column; gap: 5px; margin-bottom: 28px; font-size: 11px; }
 .app-title small, .app-row small { color: #9097a7; font-size: 7px; }
 .green-dot { background: #6bd526; }

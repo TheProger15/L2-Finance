@@ -32,6 +32,7 @@ h1 { font-size: 56px; line-height: 1.27; font-weight: 800; letter-spacing: -.5px
 .hero-picture:before { content: ""; position: absolute; width: 205px; height: 220px; left: -210px; top: -10px; background: #465978; border-radius: 60% 40% 55% 45%; transform: rotate(-35deg); }
 .hero-circle { position: absolute; width: 530px; height: 460px; top: 10px; left: -5px; background: #3285b4; border-radius: 50%; opacity: .95; }
 .phone { position: absolute; z-index: 2; top: 0; left: 120px; width: 245px; height: 520px; background: #090d17; border: 3px solid #ff4c43; border-radius: 36px; padding: 9px; transform: rotate(19deg); box-shadow: 0 8px 8px #0005; }
+.mockup{margin: -40px 40px;}
 .app-title { display: flex; flex-direction: column; gap: 5px; margin-bottom: 28px; font-size: 11px; }
 .app-title small, .app-row small { color: #9097a7; font-size: 7px; }
 .green-dot { background: #6bd526; }
@@ -125,6 +126,7 @@ h1 { font-size: 56px; line-height: 1.27; font-weight: 800; letter-spacing: -.5px
 	.top-background { min-height: 1040px; }
 	.header { width: 88%; height: auto; min-height: 65px; flex-wrap: wrap; gap: 12px; padding-top: 18px; align-items: center; }
 	.logo { font-size: 14px; }
+	.mockup{width: 220px; margin: -10px 20px;}
 	.mobile-icons { display: flex; align-items: center; gap: 15px; margin-left: auto; }
 	.mobile-icons a { font-size: 15px; }
 	.links { width: 100%; display: flex; flex-direction: column; gap: 12px; order: 3; padding: 5px 0 15px; }

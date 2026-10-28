@@ -1,4 +1,207 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+body, h1, h2, h3, p, a, label, input, select { font-family: "Montserrat", sans-serif; }
+body { background: #252b42; color: #fff; }
+a { text-decoration: none; color: inherit; }
+.full-page { width: 100%; max-width: 1440px; margin: 0 auto; overflow: hidden; background: #252b42; }
+.top-background { min-height: 790px; position: relative; background: #252b42; }
+.header { width: 82%; max-width: 1050px; height: 80px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+.logo { font-size: 18px; font-weight: 700; white-space: nowrap; }
+.links { display: flex; align-items: center; gap: 24px; }
+.links a, .login-buttons a { font-size: 12px; font-weight: 600; }
+.links a:hover, .login-buttons a:hover { color: #23a6f0; }
+.login-buttons { display: flex; align-items: center; gap: 28px; white-space: nowrap; }
+.member-button { display: flex; align-items: center; gap: 14px; background: #23a6f0; padding: 15px 20px; border-radius: 3px; }
+.member-button:hover { color: white !important; background: #168bd0; }
+.mobile-icons { display: none; }
+.hero { width: 82%; max-width: 1050px; min-height: 690px; margin: 0 auto; display: flex; align-items: flex-start; justify-content: space-between; gap: 40px; padding-top: 160px; }
+.hero-text { width: 52%; position: relative; z-index: 2; }
+h1 { font-size: 56px; line-height: 1.27; font-weight: 800; letter-spacing: -.5px; }
+.hero-text p { font-size: 16px; line-height: 1.6; margin-top: 34px; color: #fff; }
+.hero-buttons { display: flex; gap: 12px; margin-top: 30px; }
+.button { display: inline-flex; justify-content: center; align-items: center; min-width: 150px; padding: 15px 20px; border-radius: 28px; font-size: 12px; font-weight: 700; }
+.blue-button { background: #23a6f0; border: 1px solid #23a6f0; }
+.outline-button { border: 1px solid #fff; }
+.button:hover { background: #168bd0; border-color: #168bd0; }
+.hero-picture { width: 48%; height: 480px; position: relative; margin-top: -60px; }
+.hero-picture:before { content: ""; position: absolute; width: 205px; height: 220px; left: -210px; top: -10px; background: #465978; border-radius: 60% 40% 55% 45%; transform: rotate(-35deg); }
+.hero-circle { position: absolute; width: 530px; height: 460px; top: 10px; left: -5px; background: #3285b4; border-radius: 50%; opacity: .95; }
+.phone { position: absolute; z-index: 2; top: 0; left: 120px; width: 245px; height: 520px; background: #090d17; border: 3px solid #ff4c43; border-radius: 36px; padding: 9px; transform: rotate(19deg); box-shadow: 0 8px 8px #0005; }
+.phone-screen { height: 100%; background: #fff; color: #252b42; border-radius: 27px; padding: 18px 12px; overflow: hidden; }
+.phone-top { display: flex; justify-content: space-between; font-size: 8px; margin-bottom: 30px; }
+.phone-small-lines { display: flex; flex-direction: column; gap: 8px; margin-bottom: 28px; }
+.phone-small-lines i { height: 3px; width: 30px; background: #e5eaf0; }
+.phone-small-lines i:nth-child(2) { width: 65px; }
+.phone-small-lines i:nth-child(3) { width: 45px; }
+.app-title { display: flex; flex-direction: column; gap: 5px; margin-bottom: 28px; font-size: 11px; }
+.app-title small, .app-row small { color: #9097a7; font-size: 7px; }
+.green-dot { background: #6bd526; }
+.pink-dot { background: #f45189; }
+.purple-dot { background: #8b4fc6; }
+.app-title .green-dot { width: 9px; height: 9px; border-radius: 50%; }
+.app-row { display: flex; align-items: center; gap: 6px; border-bottom: 1px solid #edf0f4; padding: 12px 0; font-size: 7px; }
+.app-row div { display: flex; flex-direction: column; gap: 4px; flex: 1; }
+.app-row strong { font-size: 7px; }
+.app-dot { width: 12px; height: 12px; border-radius: 50%; }
+.app-bottom-line { height: 3px; width: 50px; margin: 25px auto 0; background: #e8edf3; }
+.section { padding-left: 9%; padding-right: 9%; }
+.section-heading { text-align: center; }
+.section-heading h2, .branch-text h2 { font-size: 36px; line-height: 1.35; font-weight: 700; }
+.section-heading p { color: #a5a9b8; font-size: 12px; line-height: 1.55; margin-top: 12px; }
+.services { padding-top: 65px; padding-bottom: 85px; }
+.service-grid { max-width: 1050px; margin: 65px auto 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px 30px; }
+.service-card { min-height: 140px; border: 1px solid #9ca2b3; display: flex; align-items: flex-start; gap: 20px; padding: 32px 20px; }
+.service-icon { width: 45px; height: 36px; min-width: 45px; position: relative; }
+.service-icon:before { content: ""; position: absolute; top: 0; left: 4px; width: 10px; height: 10px; border: 2px solid #23a6f0; border-radius: 50%; box-shadow: 14px 0 0 -2px #252b42, 14px 0 0 0 #23a6f0; }
+.service-icon:after { content: ""; position: absolute; top: 15px; left: 0; width: 19px; height: 10px; border: 2px solid #23a6f0; border-radius: 10px 10px 2px 2px; box-shadow: 14px 0 0 -2px #252b42, 14px 0 0 0 #23a6f0; }
+.service-card h3 { font-size: 15px; line-height: 1.5; margin-bottom: 8px; white-space: nowrap; }
+.service-card p { font-size: 12px; line-height: 1.5; color: #fff; }
+.reviews { padding-top: 70px; padding-bottom: 115px; }
+.review-card { max-width: 745px; min-height: 360px; background: #fff; color: #252b42; border-radius: 4px; margin: 75px auto 0; text-align: center; padding: 40px 30px 32px; }
+.review-photo { width: 95px; height: 95px; border-radius: 50%; object-fit: cover; }
+.review-card p { font-size: 14px; color: #737373; line-height: 1.6; margin-top: 28px; }
+.stars { color: #f3b600; font-size: 24px; margin-top: 18px; letter-spacing: 1px; }
+.review-card h3 { font-size: 20px; margin-top: 12px; }
+.review-card span { display: block; font-size: 12px; color: #737373; margin-top: 10px; }
+.apps { padding-top: 65px; padding-bottom: 100px; }
+.app-buttons { display: flex; justify-content: center; gap: 12px; margin: 50px auto 0; }
+.app-buttons a { min-width: 210px; min-height: 82px; border: 1px solid #8d93a4; border-radius: 8px; display: flex; align-items: center; justify-content: center; gap: 20px; font-size: 12px; line-height: 1.4; }
+.app-buttons a:hover { border-color: #23a6f0; background: #2b344e; }
+.store-icon { font-size: 32px; font-weight: 700; }
+.play { font-size: 40px; }
+.amazon { font-family: Georgia, serif; }
+.windows { font-size: 34px; }
+.pricing { padding-top: 65px; padding-bottom: 100px; }
+.price-grid { max-width: 1050px; margin: 85px auto 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
+.price-card { background: #fff; color: #252b42; border: 1px solid #23a6f0; border-radius: 7px; min-height: 245px; padding: 35px 40px; display: flex; align-items: center; gap: 25px; }
+.price-description { width: 60%; }
+.price-description h3 { color: #23a6f0; font-size: 22px; margin-bottom: 18px; }
+.price-description p { color: #737373; font-size: 13px; line-height: 1.7; }
+.price-side { width: 40%; text-align: center; color: #23a6f0; }
+.price-number { font-size: 42px; font-weight: 700; line-height: 1.1; }
+.price-number span { font-size: 18px; vertical-align: top; }
+.price-side small { display: block; font-size: 12px; margin-top: 5px; }
+.price-side a { display: block; margin-top: 25px; padding: 16px 10px; background: #23a6f0; color: white; border-radius: 4px; font-size: 12px; font-weight: 700; }
+.branches { width: 82%; max-width: 1050px; margin: 60px auto 130px; display: flex; justify-content: space-between; align-items: center; gap: 55px; }
+.branch-text { width: 50%; }
+.branch-text h2 { font-size: 36px; }
+.branch-text p { font-size: 13px; line-height: 1.5; margin-top: 18px; }
+.world-map { width: 48%; }
+.world-map img { width: 100%; max-height: 230px; object-fit: contain; }
+.appointment-background { background: linear-gradient(to bottom, #252b42 0%, #252b42 35%, #fafafa 35%, #fafafa 100%); padding: 0 9% 130px; }
+.appointment { max-width: 880px; min-height: 610px; margin: 0 auto; display: flex; background: #fff; color: #252b42; }
+.appointment-photo { width: 34%; overflow: hidden; }
+.appointment-photo img { display: block; width: 100%; height: 100%; min-height: 610px; object-fit: cover; object-position: center; }
+.appointment-form { width: 66%; padding: 45px 50px; display: flex; flex-direction: column; }
+.appointment-form h3 { text-align: center; font-size: 24px; margin-bottom: 35px; }
+.appointment-form label { font-size: 12px; font-weight: 700; margin: 10px 0 8px; }
+.appointment-form input, .appointment-form select { width: 100%; height: 48px; border: 1px solid #e5e5e5; background: #f9f9f9; padding: 0 15px; color: #737373; font-size: 12px; border-radius: 4px; }
+.book-button { display: block; text-align: center; background: #23a6f0; color: white; border-radius: 4px; padding: 17px; margin-top: 30px; font-size: 12px; font-weight: 700; }
+.footer { background: #252b42; padding: 70px 9% 55px; }
+.footer-columns { max-width: 1050px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 45px; }
+.footer-columns h3 { font-size: 20px; margin-bottom: 22px; }
+.footer-columns p, .footer-columns a { font-size: 12px; line-height: 1.6; }
+.footer-columns > div > a { display: block; margin-bottom: 12px; }
+.socials { display: flex; gap: 22px; margin-top: 20px; color: #23a6f0; font-size: 22px; }
+.copyright { background: #fafafa; color: #737373; text-align: center; padding: 25px 15px; }
+.copyright p { font-size: 12px; }
+
+@media (max-width: 900px) {
+	.header, .hero, .branches { width: 84%; }
+	.links { gap: 12px; }
+	.login-buttons { gap: 12px; }
+	.member-button { padding: 12px; }
+	h1 { font-size: 44px; }
+	.hero-circle { width: 390px; height: 390px; }
+	.phone { left: 55px; width: 210px; height: 440px; }
+	.service-grid { grid-template-columns: repeat(2, 1fr); }
+	.service-card { padding: 25px 15px; }
+	.service-card h3 { white-space: normal; }
+	.app-buttons a { min-width: 0; flex: 1; gap: 10px; }
+	.price-card { padding: 25px 20px; }
+	.appointment-form { padding: 35px 25px; }
+}
+
+@media (max-width: 600px) {
+	.top-background { min-height: 1040px; }
+	.header { width: 88%; height: auto; min-height: 65px; flex-wrap: wrap; gap: 12px; padding-top: 18px; align-items: center; }
+	.logo { font-size: 14px; }
+	.mobile-icons { display: flex; align-items: center; gap: 15px; margin-left: auto; }
+	.mobile-icons a { font-size: 15px; }
+	.links { width: 100%; display: flex; flex-direction: column; gap: 12px; order: 3; padding: 5px 0 15px; }
+	.links a { font-size: 14px; }
+	.login-buttons { display: none; }
+	.hero { width: 88%; padding-top: 35px; min-height: 900px; flex-direction: column; align-items: center; gap: 0; }
+	.hero-text { width: 100%; text-align: center; }
+	h1 { font-size: 29px; line-height: 1.2; }
+	.hero-text p { font-size: 12px; margin-top: 18px; }
+	.hero-buttons { justify-content: center; margin-top: 20px; gap: 8px; }
+	.button { min-width: 110px; padding: 12px 13px; font-size: 10px; }
+	.hero-picture { width: 100%; height: 390px; margin-top: 20px; }
+	.hero-picture:before { width: 120px; height: 140px; left: -55px; top: -80px; }
+	.hero-circle { width: 250px; height: 250px; left: 50%; transform: translateX(-50%); top: 10px; }
+	.phone { width: 150px; height: 320px; left: 50%; top: 0; transform: translateX(-50%) rotate(19deg); border-radius: 24px; padding: 6px; }
+	.phone-screen { border-radius: 19px; padding: 12px 8px; }
+	.phone-top { margin-bottom: 15px; }
+	.phone-small-lines { gap: 5px; margin-bottom: 15px; }
+	.app-title { margin-bottom: 14px; }
+	.app-row { padding: 7px 0; }
+	.section { padding-left: 7%; padding-right: 7%; }
+	.section-heading h2, .branch-text h2 { font-size: 22px; line-height: 1.3; }
+	.section-heading p { font-size: 9px; margin-top: 10px; }
+	.services { padding-top: 45px; padding-bottom: 55px; }
+	.service-grid { grid-template-columns: 1fr; gap: 18px; margin-top: 30px; }
+	.service-card { min-height: 105px; padding: 20px 15px; gap: 15px; }
+	.service-icon { transform: scale(.8); transform-origin: top left; min-width: 36px; }
+	.service-card h3 { font-size: 12px; margin-bottom: 5px; }
+	.service-card p { font-size: 10px; }
+	.reviews { padding-top: 45px; padding-bottom: 70px; }
+	.review-card { margin-top: 30px; min-height: 0; padding: 25px 15px; }
+	.review-photo { width: 60px; height: 60px; }
+	.review-card p { font-size: 10px; margin-top: 18px; }
+	.stars { font-size: 16px; margin-top: 12px; }
+	.review-card h3 { font-size: 13px; margin-top: 8px; }
+	.review-card span { font-size: 9px; margin-top: 6px; }
+	.apps { padding-top: 40px; padding-bottom: 65px; }
+	.app-buttons { flex-direction: column; width: 80%; margin-top: 25px; gap: 10px; }
+	.app-buttons a { min-height: 58px; justify-content: flex-start; padding-left: 22px; font-size: 10px; }
+	.store-icon { font-size: 24px; }
+	.pricing { padding-top: 45px; padding-bottom: 65px; }
+	.price-grid { grid-template-columns: 1fr; gap: 15px; margin-top: 30px; }
+	.price-card { min-height: 150px; padding: 20px 18px; gap: 10px; }
+	.price-description { width: 58%; }
+	.price-description h3 { font-size: 15px; margin-bottom: 12px; }
+	.price-description p { font-size: 9px; line-height: 1.6; }
+	.price-number { font-size: 27px; }
+	.price-number span { font-size: 12px; }
+	.price-side small { font-size: 9px; }
+	.price-side a { font-size: 9px; padding: 10px 5px; margin-top: 15px; }
+	.branches { width: 84%; margin: 25px auto 60px; flex-direction: column; align-items: stretch; gap: 25px; }
+	.branch-text { width: 100%; }
+	.branch-text h2 { font-size: 22px; }
+	.branch-text p { font-size: 10px; margin-top: 12px; }
+	.world-map { width: 100%; }
+	.world-map img { max-height: 150px; }
+	.appointment-background { padding: 0 0 75px; background: linear-gradient(to bottom, #252b42 0%, #252b42 15%, #fafafa 15%, #fafafa 100%); }
+	.appointment { width: 100%; flex-direction: column; min-height: 0; }
+	.appointment-photo { width: 100%; height: 260px; }
+	.appointment-photo img { min-height: 0; height: 260px; object-position: center 35%; }
+	.appointment-form { width: 100%; padding: 25px 18px 30px; }
+	.appointment-form h3 { font-size: 18px; margin-bottom: 20px; }
+	.appointment-form label { font-size: 10px; margin-top: 8px; }
+	.appointment-form input, .appointment-form select { height: 38px; font-size: 10px; }
+	.book-button { padding: 13px; margin-top: 20px; font-size: 10px; }
+	.footer { padding: 45px 9% 35px; }
+	.footer-columns { grid-template-columns: 1fr 1fr; gap: 35px 20px; }
+	.footer-columns h3 { font-size: 13px; margin-bottom: 14px; }
+	.footer-columns p, .footer-columns a { font-size: 9px; }
+	.footer-columns > div > a { margin-bottom: 9px; }
+	.socials { gap: 14px; font-size: 16px; margin-top: 12px; }
+	.copyright { padding: 15px 10px; }
+	.copyright p { font-size: 8px; }
 }
